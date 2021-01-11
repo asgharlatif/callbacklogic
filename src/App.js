@@ -7,13 +7,14 @@ import ACallBack from './ACallBack';
 function App() {
   return (
     <div className="App-header">
-      <b>Please inspect the page to see call back functions execution (Console tab of google chrome)</b>
+      <b>Inspect the page to see call back functions execution (Console tab of google chrome). </b>
       <div>
          
       <TraditionalCallBack />
       <PromissedCallBack />
       <ACallBack />
-      
+      <br />
+      TraditionalCallerCode Branch
     </div>
     </div>
   );
