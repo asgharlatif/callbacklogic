@@ -7,15 +7,10 @@ function ACallBack() {
             console.log("Starting food preparation, Food may take 20 minutes");
             setTimeout(() => {       
       
-              if (1 != 1)
-              {
-                reject("Divide by 0 error");
-              }
-              else
-              {
+             
                 console.log("Food is Ready now");
                 resolve("Hello everybody, this is chef Ali. Food will be served in 2 minutes");
-              }
+             
       
             }, 5000)
           });
