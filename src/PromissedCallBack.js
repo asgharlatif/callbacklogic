@@ -5,10 +5,19 @@ function PromissedCallBack() {
   function PrepareFood() {
     let promise = new Promise(function (resolve, reject) {
       console.log("Starting food preparation, Food may take 20 minutes");
-      setTimeout(() => {
-        console.log("Food is Ready now");
-        resolve("Hello everybody, this is chef Ali. Food will be served in 2 minutes");
-      }, 20000)
+      setTimeout(() => {       
+
+        if (1 != 1)
+        {
+          reject("Divide by 0 error");
+        }
+        else
+        {
+          console.log("Food is Ready now");
+          resolve("Hello everybody, this is chef Ali. Food will be served in 2 minutes");
+        }
+
+      }, 5000)
     });
     return promise;
   }
@@ -19,7 +28,7 @@ function PromissedCallBack() {
       setTimeout(() => {
         console.log("Tea is ready now");
         resolve("Hello everybody, this is chef Ahsen , Tea will be served in 2 minutes");
-      }, 10000)
+      }, 5000)
     });
     return promise;
   }
@@ -28,8 +37,10 @@ function PromissedCallBack() {
     let promise = new Promise(function (resolve, reject) {
       console.log("Here is Mutahir , Sweet will take as long as Tea Preparion by Ahsen.")
       setTimeout(() => {
+        
         resolve("Hello everybody, this is chef Mutahir,Sweet will be served in 2 miinutes with Tea,Enjoy");
-      }, 10000)
+
+      }, 5000)
     });
     return promise;
   }
@@ -51,7 +62,10 @@ function PromissedCallBack() {
       })
       .then(function (value) {
         console.log("chef Sweet ready message using callback is = ", value);
-        console.log("Sweet is amazing");
+        console.log("Sweet is amazing");        
+      })
+      .catch(function (error){
+        console.log("Error = ", error  )
       })
   }
 
