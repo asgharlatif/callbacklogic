@@ -3,6 +3,7 @@ import './App.css';
 import TraditionalCallBack from './TraditionalCallBack';
 import PromissedCallBack from './PromissedCallBack';
 import ACallBack from './ACallBack';
+import ProceduralProcess from './ProceduralProcess';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TraditionalCallBack />
       <PromissedCallBack />
       <ACallBack />
+      <ProceduralProcess />
       
     </div>
     </div>
